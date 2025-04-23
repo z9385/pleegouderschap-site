@@ -1,61 +1,73 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Algemeen */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
+h1, h2 {
+    color: #007BFF;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
 header {
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: white;
-    padding: 1em 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2em;
+    margin: 0;
+    font-size: 36px;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 15px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-}
-
+/* Secties */
 section {
     padding: 20px;
     margin: 20px 0;
     background-color: white;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #4CAF50;
+section#home {
+    background-color: #e2f3ff;
 }
 
+section#wat, section#soorten, section#hoe, section#faq, section#contact {
+    background-color: #ffffff;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: #007BFF;
     color: white;
     text-align: center;
-    padding: 1em;
-    position: absolute;
+    padding: 15px;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
-
